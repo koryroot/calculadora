@@ -4,19 +4,30 @@
              xmlns:local="clr-namespace:apkCalculadora"
              x:Class="apkCalculadora.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Calculadora!" 
-           HorizontalOptions="Center"
-           
-           VerticalOptions="CenterAndExpand" />
-        <Entry Placeholder="Ingresa el primer numero" x:Name="txtn1" />
-        <Entry Placeholder="Ingresa el segundo numero" x:Name="txtn2"/>
-        <Label Text="Selecione la operacion"  />
-        <Picker x:Name="wkOperacion" />
-        <Label TextColor="Blue" Text="-------"  x:Name="lblRes"/>
-        <Button Text="Calcular" />
+    <StackLayout
+         HorizontalOptions="Center"
+        VerticalOptions="Center"
+           >
+        <!-- wendry koralis 2019-7914 -->
+        
+            <Label Text="Calculadora!" 
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="25"
+                TextColor="#56403C"   />
 
+            <Label TextColor="Blue" Text="------------------"  x:Name="lblRes"
+                   HorizontalOptions="Center"
+                   FontFamily="italic"
+                   FontSize="20"/>
+            <Entry Placeholder="Ingresa el primer numero" Keyboard="Numeric" x:Name="txtn1" />
+            <Entry Placeholder="Ingresa el segundo numero" Keyboard="Numeric" x:Name="txtn2"/>
+            <Label Text="Selecione la operacion"  />
+            <Picker x:Name="wkOperacion" />
+
+            <Button Text="Calcular" x:Name="calcular" 
+                    BackgroundColor="#02C0E7"/>
+       
 
     </StackLayout>
 
